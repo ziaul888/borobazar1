@@ -1,0 +1,16 @@
+@import "../../var.scss";
+
+.feature-sec {
+  margin: 30px;
+  .feature {
+    background: #ffeed6;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //align-items: center;
+      //text-align: center;
+    }
+  }
+}
