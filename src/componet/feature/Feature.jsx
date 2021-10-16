@@ -4,7 +4,7 @@ import "./feature.scss";
 
 export const Feature = () => {
   return (
-    <div className="feature-sec mt-5 d-none d-sm-block">
+    <div className="feature-sec mt-5 d-none d-sm-block d-md-none d-lg-block">
       <div className="row">
         {data.map((item) => {
           return (

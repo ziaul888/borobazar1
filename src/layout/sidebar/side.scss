@@ -1,9 +1,12 @@
 @import "../../var.scss";
+
 .sidebar--wrap {
   border-right: 1px solid #ccc;
   min-height: calc(100vh - 51px);
   transition: all 300ms;
-  width: 250px;
+  width: 350px;
+  margin-left: 10px;
+  border: 1px solid gainsboro;
 
   @media only screen and (max-width: 767px) {
     background-color: #fff;
@@ -47,9 +50,14 @@
       align-items: center;
       font-size: 13px;
       letter-spacing: 0.1px;
-      padding: 5px 10px 5px 15px;
+      padding: 9px 11px 19px 15px;
       text-decoration: none;
-
+      border: 1px solid gainsboro;
+      .sidebar-menu__sub {
+        a {
+          border: none;
+        }
+      }
       &:hover,
       &:focus {
         background: linear-gradient(
@@ -117,14 +125,5 @@
     .sidebar-menu__sub {
       margin-left: 20px;
     }
-  }
-}
-
-.main-content {
-  width: 100%;
-
-  @media only screen and (min-width: 768px) {
-    flex: 0 0 calc(100% - 250px);
-    max-width: calc(100% - 250px);
   }
 }
