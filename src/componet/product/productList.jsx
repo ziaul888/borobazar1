@@ -34,7 +34,6 @@ export const ProductList = () => {
             <Products />
             <Products />
             <Products />
-            
           </div>
         </div>
       </div>

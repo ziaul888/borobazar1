@@ -1,0 +1,34 @@
+.applink-sec {
+  margin-top: 30px;
+  .applink {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    .img-container {
+      img {
+        margin-left: 10px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .app-name {
+    p {
+      width: 550px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+    
+    }
+  }
+  .title {
+    width: 550px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+}
+.man-img {
+  margin-left: 70px;
+}

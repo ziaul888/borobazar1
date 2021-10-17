@@ -4,6 +4,7 @@ import { Feature } from "../componet/feature/Feature.jsx";
 import SideBar from "../layout/sidebar/sideBar";
 import { ProductList } from "../componet/product/productList";
 import { AppLink } from "../componet/app/AppLink";
+import { Footer } from "../layout/Footer/Footer";
 import "./main.scss";
 
 export const HomePages = () => {
@@ -11,13 +12,14 @@ export const HomePages = () => {
     <>
       <Silder />
       <Feature />
-
+      
       <div className="main--wrapper">
         <div className="container-fluid">
           <div className="row">
             <SideBar />
             <ProductList />
             <AppLink />
+            
           </div>
         </div>
       </div>

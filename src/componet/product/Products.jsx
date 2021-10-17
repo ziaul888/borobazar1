@@ -4,7 +4,7 @@ import "./product.scss";
 export const Products = () => {
   return (
     <>
-      <div className="col-lg-2 col-md-3 product--items mb-3">
+      <div className="col-6 col-md-3  product--items mb-3">
         <div className="product">
           <div className="product__card">
             <div className="product_img d-flex align-items-center justify-content-center">
@@ -14,7 +14,7 @@ export const Products = () => {
                 alt="Moshur Dal (Mota)"
               />
             </div>
-
+            <button> +</button>
             <div className="product_name">Moshur Dal (Mota)</div>
             <div className="product_quantity">1kg</div>
             <div className="product_price d-flex align-items-center justify-content-center">
