@@ -42,6 +42,13 @@
     margin-top: 20px;
     padding-top: 20px;
   }
+  .sidebar-menu__sub {
+    li {
+      a {
+        border: none;
+      }
+    }
+  }
   li {
     display: block;
     a {
@@ -53,11 +60,7 @@
       padding: 9px 11px 19px 15px;
       text-decoration: none;
       border: 1px solid gainsboro;
-      .sidebar-menu__sub {
-        a {
-          border: none;
-        }
-      }
+
       &:hover,
       &:focus {
         background: linear-gradient(

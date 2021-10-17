@@ -2,6 +2,10 @@
 
 .feature-sec {
   margin: 30px;
+  @media only screen and (max-width: 767px) {
+    margin-top: -30px;
+    margin: 0px;
+  }
   .feature {
     background: #ffeed6;
 
