@@ -10,20 +10,26 @@ export const AppLink = () => {
       <div className="applink-sec  mx-auto">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-6  col-md-12 applink d-none d-sm-block d-md-none d-lg-block">
-              <div className="app-name">
-                <h5 className="title">
-                  Make your online shop easier with our mobile app
-                </h5>
-                <p>
-                  BoroBazar makes online grocery shopping fast and easy. Get
-                  groceries delivered and order the best of seasonal farm fresh
-                  food.
-                </p>
-              </div>
-              <div className="img-container">
-                <img src={playstore} alt="" />
-                <img src={AppStore} alt="" />
+            <div className="col-lg-6  col-md-12  d-none d-sm-block d-md-none d-lg-block">
+              <div className="applink">
+                <div className="app-name">
+                  <h5 className="title">
+                    Make your online shop easier with our mobile app
+                  </h5>
+                  <p>
+                    BoroBazar makes online grocery shopping fast and easy. Get
+                    groceries delivered and order the best of seasonal farm
+                    fresh food.
+                  </p>
+                </div>
+                <div className="img-container">
+                  <a href="#">
+                    <img src={playstore} alt="" />
+                  </a>
+                  <a href="#">
+                    <img src={AppStore} alt="" />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="col-lg-6  d-none d-sm-block d-md-none d-lg-block ">

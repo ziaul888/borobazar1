@@ -1,5 +1,6 @@
 import React from "react";
 import "./product.scss";
+import product from "../../asset/images/p-4-1.png";
 
 export const Products = () => {
   return (
@@ -9,17 +10,18 @@ export const Products = () => {
           <div className="product__card">
             <div className="product_img d-flex align-items-center justify-content-center">
               <img
-                src="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-11.png&w=256&q=100 1x"
+                src={product}
                 className="img-fluid"
                 alt="Moshur Dal (Mota)"
               />
             </div>
-            <button> +</button>
-            <div className="product_name">Moshur Dal (Mota)</div>
+            <button>
+              <span className="addtocart">+</span>
+            </button>
+            <div className="product_name">Green Giant Peas</div>
             <div className="product_quantity">1kg</div>
             <div className="product_price d-flex align-items-center justify-content-center">
               <span className="product_price_discount">৳ 80</span>
-              <span className="product_price_price">৳ 100</span>
             </div>
           </div>
         </div>

@@ -1,72 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import "./side.scss";
+import veg from "../../asset/images/fresh-vegetables.svg";
+import diet from "../../asset/images/diet-foods.svg";
+const SideBar = ({ handleSideBar }) => {
+  const [open, setOpen] = useState(false);
 
-const SideBar = () => {
+  const sideBarOpen = () => {
+    setOpen(true);
+  };
+
   return (
-    <div className="sidebar--wrap py-3 px-0  ">
+    <div className="sidebar--wrap py-3 px-0  " show={handleSideBar}>
       <ul className="sidebar-menu">
-        <li className="sidebar-menu_has-child subMenu-open">
-          <a href="#">
-            <img
-              src="https://chaldn.com/_mpimage/popular?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D80219&q=low&v=1&m=40&webp=1&alpha=1"
-              alt=""
-            />{" "}
-            Organic & Natural
+        <li
+          className="sidebar-menu_has-child subMenu-open "
+          onClick={sideBarOpen}
+        >
+          <a>
+            <img src={veg} alt="" /> Fresh Vegetables
           </a>
-          <ul className="sidebar-menu__sub">
+
+          <ul
+            className={`${open ? "sidebar-menu__sub " : "sidebar-menu hide"}`}
+          >
             <li>
-              <a href="#">Fruits & Vegetable</a>
+              <a>Arugula</a>
             </li>
             <li>
-              <a href="#">Organic Grocery</a>
+              <a href="#">Asparagus</a>
             </li>
             <li>
-              <a href="#">Meat & Fish</a>
+              <a href="#">Beets</a>
             </li>
             <li>
-              <a href="#">Age restriced category</a>
+              <a href="#">Cabbages</a>
             </li>
           </ul>
         </li>
         <li className="sidebar-menu_has-child">
-          <a href="#">
-            <img
-              src="https://chaldn.com/_mpimage/popular?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D80219&q=low&v=1&m=40&webp=1&alpha=1"
-              alt=""
-            />{" "}
-            Baby Care
+          <a>
+            <img src={diet} alt="" /> Diet Foods
           </a>
-          <ul className="sidebar-menu__sub">
+          <ul
+            className={`${open ? "sidebar-menu__sub " : "sidebar-menu hide"}`}
+          >
             <li>
-              <a href="#">Newborn Essentials</a>
+              <a href="#">Whole Eggs</a>
             </li>
-            <li className="sidebar-menu_has-child">
-              <a href="#">Diapers & Wipes</a>
-              <ul className="sidebar-menu__sub">
-                <li>
-                  <a href="#">Wipes</a>
-                </li>
-                <li>
-                  <a href="#">Diapers</a>
-                </li>
-              </ul>
-            </li>
+
             <li>
-              <a href="#">Feeders</a>
-            </li>
-            <li className="sidebar-menu_has-child">
-              <a href="#">Fooding</a>
-              <ul className="sidebar-menu__sub">
-                <li>
-                  <a href="#">Formula</a>
-                </li>
-                <li>
-                  <a href="#">Baby & Toddler Food</a>
-                </li>
-                <li>
-                  <a href="#">Milk, Juice & Drinks</a>
-                </li>
-              </ul>
+              <a href="#">Boiled Potatoes</a>
             </li>
           </ul>
         </li>

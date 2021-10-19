@@ -88,7 +88,23 @@
       z-index: 1;
     }
   }
+  button {
+    background: #00a07e;
+    border: none;
+    height: 50px;
+    width: 47px;
 
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    .addtocart {
+      color: ghostwhite;
+      font-size: 29px;
+      padding: 10px;
+      font-weight: 700;
+      padding-bottom: 5px;
+    }
+  }
   &__card {
     padding-bottom: 10px;
     position: relative;
@@ -122,9 +138,6 @@
       object-fit: cover;
       max-height: 100%;
       margin: auto;
-    }
-    .addtocart {
-      background-color: $primary-color;
     }
   }
 

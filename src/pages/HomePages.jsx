@@ -10,19 +10,12 @@ import "./main.scss";
 export const HomePages = () => {
   return (
     <>
-      <Silder />
-      <Feature />
       
-      <div className="main--wrapper">
-        <div className="container-fluid">
-          <div className="row">
-            <SideBar />
-            <ProductList />
-            <AppLink />
-            
-          </div>
-        </div>
-      </div>
+      <Feature />
+
+      
+    
+      
     </>
   );
 };

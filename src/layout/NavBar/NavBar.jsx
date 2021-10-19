@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.scss";
 import logo from "../../asset/images/logo.svg";
+import {NavBarMo} from "../navMobile/NavBarMob"
 const navBar = () => {
   return (
     <>
@@ -44,7 +45,7 @@ const navBar = () => {
             <div className="nav-right text-center d-flex">
               <div className="country">
                 <span
-                  class="dropdown-toggle"
+                  className="dropdown-toggle"
                   type="button"
                   id="dropdownMenuButton"
                   data-toggle="dropdown"
@@ -57,23 +58,24 @@ const navBar = () => {
                   aria-labelledby="dropdownMenuButton"
                 >
                   <a class="dropdown-item" href="#">
-                    Your Profile
+                    English - EN
                   </a>
                   <a class="dropdown-item" href="#">
-                    Your Orders
+                    English - EN
                   </a>
                   <a class="dropdown-item" href="#">
-                    Payment History
+                    English - EN
                   </a>
                   <a class="dropdown-item" href="#">
-                    Change Password
+                    English - EN
                   </a>
                   <a class="dropdown-item" href="#">
-                    Logout
+                    English - EN
                   </a>
                 </div>
               </div>
               <div className="cart-icon d-md-none d-lg-block">
+              <span className="mobile-shopping-wrap__cart_item d-flex align-items-center justify-content-center">7</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -84,7 +86,9 @@ const navBar = () => {
                 >
                   <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                 </svg>
+                
                 <span className="cart">cart</span>
+                
               </div>
               <div className="user d-md-none d-lg-block">
                 <svg
@@ -107,6 +111,7 @@ const navBar = () => {
           </div>
         </div>
       </div>
+      <NavBarMo/>
     </>
   );
 };
